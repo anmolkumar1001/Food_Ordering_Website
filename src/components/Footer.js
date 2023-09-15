@@ -11,7 +11,7 @@ export default function Footer() {
             className="mb-3 me-2 mb-md-0 text-muted text-decoration-none 1h-1"
           ></Link>
 
-          <span className="text-muted">@ 2023 Foodiee, Inc</span>
+          <span className="text-muted">@ 2023 Food Corner, Inc</span>
         </div>
       </footer>
     </div>
