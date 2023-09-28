@@ -6,7 +6,7 @@ import Cart from "../screens/Cart";
 import { useCart } from "./ContextReducer";
 
 export default function Navbar(props) {
-  let data = useCart;
+  let data = useCart();
 
   const [cartView, setCartView] = useState(false);
   localStorage.setItem("temp", "first");
@@ -22,7 +22,7 @@ export default function Navbar(props) {
         <div className="container-fluid">
           {/* fs-1 is for font size and fst-italic is font style. */}
           <Link className="navbar-brand fs-1 fst-italic" to="/">
-            Food Corner
+            Food Delight
           </Link>
           <button
             className="navbar-toggler"

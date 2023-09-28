@@ -1,6 +1,7 @@
 import React from "react";
-import Delete from "@material-ui/icons/Delete";
+// import Delete from "@material-ui/icons/Delete";
 import { useCart, useDispatchCart } from "../components/ContextReducer";
+import trash from "../trash.svg";
 
 export default function Cart() {
   let data = useCart();
@@ -59,7 +60,8 @@ export default function Cart() {
                 <td>{food.price}</td>
                 <td>
                   <button type="button" className="btn p-0">
-                    <Delete
+                    <img
+                      src={trash}
                       onClick={() => {
                         dispatch({ type: "REMOVE", index: index });
                       }}
