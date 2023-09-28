@@ -33,6 +33,7 @@ export default function Login() {
 
       // when user login then open homepage
       if (json.success) {
+        localStorage.setItem("userEmail", credentials.email);
         // login store in localstorage
         localStorage.setItem("authToken", json.authToken);
         console.log(localStorage.getItem("authToken"));
