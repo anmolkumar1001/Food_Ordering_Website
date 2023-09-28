@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const mongoURI =
-  "mongodb+srv://anmolkumar6943:anmol123@anmolcluster1.vhobohe.mongodb.net/food?retryWrites=true&w=majority";
+  "mongodb+srv://@anmolcluster1.vhobohe.mongodb.net/food?retryWrites=true&w=majority";
 
 const mongoDB = async () => {
   await mongoose.connect(mongoURI, { useNewUrlParser: true });
